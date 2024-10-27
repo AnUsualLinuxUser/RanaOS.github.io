@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e7f9e5;
+    color: #2e3a25;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+header {
+    background: #7bcd91;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    color: #fff;
+    margin: 0;
+}
+
+.logo-inline {
+    vertical-align: middle;
+    margin-left: 5px; 
+}
+
+.logo {
+    height: 0.8em; /* Altezza del logo; puoi regolarla */
+    width: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    border: 2px solid #c4d600;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+section:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #4c7e3b;
+    transition: transform 0.3s ease;
+}
+
+section:hover h2 {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2e3a25;
+    color: #fff;
+}
+
+.download-button {
+    background: #c4d600;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+.download-button:hover,
+.download-button:focus {
+    background: #b3b300;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
